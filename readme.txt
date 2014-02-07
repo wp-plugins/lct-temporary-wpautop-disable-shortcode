@@ -3,8 +3,8 @@ Contributors: ircary
 Donate link: http://lookclassy.com/
 Tags: shortcode, disable wpautop
 Requires at least: 3.0
-Tested up to: 3.8
-Stable tag: 1.0
+Tested up to: 3.8.1
+Stable tag: 1.1.1
 License: GPLv3 or later
 License URI: http://opensource.org/licenses/GPL-3.0
 
@@ -31,5 +31,8 @@ none
 
 
 == Changelog ==
+= 1.1.1 =
+	- Tested for WP 3.8.1 Compapibility
+
 = 1.0 =
 	- First Release
