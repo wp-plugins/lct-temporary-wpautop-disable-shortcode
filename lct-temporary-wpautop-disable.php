@@ -3,7 +3,7 @@
 Plugin Name: LCT Temporary wpautop Disable Shortcode
 Plugin URI: http://lookclassy.com/wordpress-plugins/temporary-wpautop-disable/
 Description: Use a simple shortcode to bypass the sometimes damaging effect of the wpautop function.
-Version: 1.1.1
+Version: 1.1.2
 Text Domain: lct-temporary-wpautop-disable
 Author: Look Classy Technologies
 Author URI: http://lookclassy.com/
