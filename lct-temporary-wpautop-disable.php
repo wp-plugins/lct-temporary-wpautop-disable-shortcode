@@ -1,7 +1,7 @@
 <?php /*
 Plugin Name: LCT Temporary wpautop Disable Shortcode
 Plugin URI: http://lookclassy.com/wordpress-plugins/temporary-wpautop-disable/
-Version: 1.2
+Version: 1.2.1
 Text Domain: lct-temporary-wpautop-disable
 Author: Look Classy Technologies
 Author URI: http://lookclassy.com/
@@ -23,7 +23,7 @@ GNU General Public License for more details.
 //Globals
 $g_ltwd = new g_ltwd;
 class g_ltwd {
- 	public $editzz						= 'editzz';
+	public $editzz						= 'editzz';
 	public $lct_dash					= 'lct-temporary-wpautop-disable';
 	public $lct_us						= 'lct_temporary_wpautop_disable';
 
@@ -35,24 +35,24 @@ class g_ltwd {
 }
 
 
-remove_filter('the_content', 'wpautop');
-remove_filter('the_content', 'wptexturize');
-add_filter('the_content', 'wpautop_Disable', 99);
-function wpautop_Disable($content) {
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_content', 'wptexturize' );
+add_filter( 'the_content', 'wpautop_Disable', 99 );
+function wpautop_Disable( $content ) {
 	$new_content = '';
 	$pattern_full = '{(\[raw\].*?\[/raw\])}is';
 	$pattern_contents = '{\[raw\](.*?)\[/raw\]}is';
-	$pieces = preg_split($pattern_full, $content, -1, PREG_SPLIT_DELIM_CAPTURE);
+	$pieces = preg_split( $pattern_full, $content, -1, PREG_SPLIT_DELIM_CAPTURE );
 
-	foreach($pieces as $piece) {
-		if(preg_match($pattern_contents, $piece, $matches)) {
+	foreach( $pieces as $piece ) {
+		if( preg_match( $pattern_contents, $piece, $matches ) ) {
 			$new_content .= $matches[1];
 		} else {
-			$new_content .= wptexturize(wpautop($piece));
+			$new_content .= wptexturize( wpautop( $piece ) );
 		}
 	}
 
-	$new_content = str_replace(array("[raw]", "[/raw]"), "", $new_content);
+	$new_content = str_replace( array( "[raw]", "[/raw]" ), "", $new_content );
 
 	return $new_content;
 }
