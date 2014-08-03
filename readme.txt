@@ -1,7 +1,7 @@
 === LCT Temporary wpautop Disable Shortcode ===
 Contributors: ircary
 Donate link: http://lookclassy.com/
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 Requires at least: 3.0
 Tested up to: 3.9.1
 Tags: shortcode, disable wpautop
@@ -13,6 +13,7 @@ Use a simple shortcode to bypass the sometimes damaging effect of the wpautop fu
 
 == Description ==
 Use a simple shortcode to bypass the sometimes damaging effect of the wpautop function.
+Also Available in lct-useful-shortcodes-functions
 
 == Installation ==
 1. Upload the zip file contents to your Wordpress plugins directory.
@@ -31,6 +32,10 @@ none
 
 
 == Changelog ==
+= 1.2.2 =
+	- Made a check for LCT Helpful Plugin.
+	- Fixed g_ltwd global class
+
 = 1.2.1 =
 	- Fixed conflict with function 'lct_wpautop_disable'
 
