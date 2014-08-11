@@ -1,7 +1,7 @@
 <?php /*
 Plugin Name: LCT Temporary wpautop Disable Shortcode
 Plugin URI: http://lookclassy.com/wordpress-plugins/temporary-wpautop-disable/
-Version: 1.2.2
+Version: 1.4
 Text Domain: lct-temporary-wpautop-disable
 Author: Look Classy Technologies
 Author URI: http://lookclassy.com/
@@ -24,7 +24,7 @@ GNU General Public License for more details.
 //PLUGIN PREFIX: ltwd
 
 
-if( ! function_exists( 'is_plugin_active' ) ) { require_once( ABSPATH . '/wp-admin/includes/plugin.php' ); }
+if( ! function_exists( 'is_plugin_active' ) ) { include_once( ABSPATH . '/wp-admin/includes/plugin.php' ); }
 if( ! is_plugin_active( 'lct-useful-shortcodes-functions/lct-useful-shortcodes-functions.php' ) ) {
 
 

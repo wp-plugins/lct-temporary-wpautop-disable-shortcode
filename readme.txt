@@ -1,9 +1,9 @@
 === LCT Temporary wpautop Disable Shortcode ===
 Contributors: ircary
 Donate link: http://lookclassy.com/
-Stable tag: 1.2.2
+Stable tag: 1.4
 Requires at least: 3.0
-Tested up to: 3.9.1
+Tested up to: 3.9.2
 Tags: shortcode, disable wpautop
 License: GPLv3 or later
 License URI: http://opensource.org/licenses/GPL-3.0
@@ -32,6 +32,10 @@ none
 
 
 == Changelog ==
+= 1.4 =
+	- Tested for WP 3.9.2 Compatibility
+	- Changed the lct-useful-shortcodes-functions is_plugin_active() code
+
 = 1.2.2 =
 	- Made a check for LCT Helpful Plugin.
 	- Fixed g_ltwd global class
