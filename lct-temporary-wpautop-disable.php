@@ -1,18 +1,18 @@
 <?php /*
 Plugin Name: LCT Temporary wpautop Disable Shortcode
 Plugin URI: http://lookclassy.com/wordpress-plugins/temporary-wpautop-disable/
-Version: 1.4
+Version: 1.4.1
 Text Domain: lct-temporary-wpautop-disable
 Author: Look Classy Technologies
 Author URI: http://lookclassy.com/
 License: GPLv3 (http://opensource.org/licenses/GPL-3.0)
 Description: Use a simple shortcode to bypass the sometimes damaging effect of the wpautop function.
 Also Available in lct-useful-shortcodes-functions
-Copyright 2013 Look Classy Technologies  (email : info@lookclassy.com)
+Copyright 2014 Look Classy Technologies  (email : info@lookclassy.com)
 */
 
 /*
-Copyright (C) 2013 Look Classy Technologies
+Copyright (C) 2014 Look Classy Technologies
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -24,12 +24,7 @@ GNU General Public License for more details.
 //PLUGIN PREFIX: ltwd
 
 
-if( ! function_exists( 'is_plugin_active' ) ) { include_once( ABSPATH . '/wp-admin/includes/plugin.php' ); }
-if( ! is_plugin_active( 'lct-useful-shortcodes-functions/lct-useful-shortcodes-functions.php' ) ) {
-
-
-	//Globals
-	$g_ltwd = new g_ltwd;
+if( ! class_exists( 'g_ltwd' ) ) {
 	class g_ltwd {
 		public $editzz						= 'editzz';
 		public $pre							= 'ltwd_';
@@ -42,6 +37,13 @@ if( ! is_plugin_active( 'lct-useful-shortcodes-functions/lct-useful-shortcodes-f
 			$this->plugin_dir_path			= plugin_dir_path( __FILE__ );
 		}
 	}
+}
+
+
+if( ! function_exists( 'is_plugin_active' ) ) { include_once( ABSPATH . '/wp-admin/includes/plugin.php' ); }
+if( ! is_plugin_active( 'lct-useful-shortcodes-functions/lct-useful-shortcodes-functions.php' ) ) {
+	//Globals
+	$g_ltwd = new g_ltwd;
 
 
 	remove_filter( 'the_content', 'wpautop' );
