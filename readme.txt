@@ -1,9 +1,9 @@
 === LCT Temporary wpautop Disable Shortcode ===
 Contributors: ircary
 Donate link: http://lookclassy.com/
-Stable tag: 1.4.2
+Stable tag: 4.1
 Requires at least: 3.0
-Tested up to: 4.0
+Tested up to: 4.1
 Tags: shortcode, disable wpautop
 License: GPLv3 or later
 License URI: http://opensource.org/licenses/GPL-3.0
@@ -32,6 +32,10 @@ none
 
 
 == Changelog ==
+= 4.1 =
+	- WP 4.1 Ready
+	- jumped version to match WP
+
 = 1.4.2 =
 	- WP 4.0 Ready
 
