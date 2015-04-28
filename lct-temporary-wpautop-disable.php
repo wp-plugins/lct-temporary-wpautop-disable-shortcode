@@ -1,7 +1,7 @@
 <?php /*
 Plugin Name: LCT Temporary wpautop Disable Shortcode
 Plugin URI: http://lookclassy.com/wordpress-plugins/temporary-wpautop-disable/
-Version: 4.2
+Version: 4.2.1
 Text Domain: lct-temporary-wpautop-disable
 Author: Look Classy Technologies
 Author URI: http://lookclassy.com/
